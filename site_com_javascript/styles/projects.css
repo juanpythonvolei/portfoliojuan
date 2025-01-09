@@ -1,0 +1,203 @@
+html,
+body {
+  height: 100svh;
+  width: 100svw; /* Garante que o HTML e o Body tenham 100% da altura da tela */
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5svw;
+  background-color: black;
+  & nav {
+    padding: 2svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4svw;
+    background: linear-gradient(to right, #1a1919, #a5a4a4);
+    & a {
+      text-decoration: none;
+      color: blueviolet;
+      font-size: 2svw;
+      background-color: black;
+      padding: 1svw;
+      border-radius: 15px;
+      font-weight: bolder;
+      font-family: monospace;
+      box-shadow: 0.5svw 0.5svw 3px rgba(0, 0, 0, 0.384);
+    }
+  }
+  & .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2svw;
+    & .lista-volei {
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      border-radius: 5px;
+      padding: 2svw;
+      flex-direction: row;
+      gap: 10svw;
+      background-color: rgb(125, 164, 240);
+      animation: list ease-out 1 3s running alternate forwards;
+      & .description-lista {
+        display: flex;
+        flex-direction: column;
+        color: antiquewhite;
+        font-size: large;
+        font-weight: bolder;
+        font-family: monospace;
+
+        & .title {
+          margin-bottom: 10svw;
+          font-size: 5svw;
+        }
+        & .description {
+          font-size: 4.2svw;
+          margin-bottom: 2svw;
+        }
+      }
+      & .icon-lista {
+        display: flex;
+        flex-direction: column;
+        border-radius: 360px;
+        padding: 3svw;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 0.5svw 0.5svw 3px rgba(0, 0, 0, 0.384);
+        & i {
+          font-size: 20svw;
+          color: antiquewhite;
+        }
+        & label {
+          text-align: center;
+          & a {
+            text-decoration: none;
+            color: antiquewhite;
+            font-size: 3svw;
+            font-family: monospace;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+    & .app-coletor {
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      border-radius: 5px;
+      padding: 2svw;
+      flex-direction: row;
+      gap: 10svw;
+      background-color: rgb(47, 116, 254);
+      animation: app-coletor ease-out 1 3s running alternate forwards;
+      & .description-app-lista {
+        display: flex;
+        flex-direction: column;
+        color: antiquewhite;
+        font-size: large;
+        font-weight: bolder;
+        font-family: monospace;
+
+        & .title-app-coletor {
+          margin-bottom: 10svw;
+          font-size: 5svw;
+        }
+        & .description {
+          font-size: 4.2svw;
+          margin-bottom: 2svw;
+        }
+      }
+      & .icon-app-coletor {
+        display: flex;
+        flex-direction: column;
+        border-radius: 360px;
+        padding: 3svw;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 0.5svw 0.5svw 3px rgba(0, 0, 0, 0.384);
+        & i {
+          font-size: 20svw;
+          color: antiquewhite;
+        }
+        & label {
+          text-align: center;
+          & a {
+            text-decoration: none;
+            color: antiquewhite;
+            font-size: 3svw;
+            font-family: monospace;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+    & .api-lista {
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      border-radius: 5px;
+      padding: 2svw;
+      flex-direction: row;
+      gap: 10svw;
+      background-color: rgb(105, 30, 234);
+      animation: list ease-out 1 3s running alternate forwards;
+      & .description-api-lista {
+        display: flex;
+        flex-direction: column;
+        color: antiquewhite;
+        font-size: large;
+        font-weight: bolder;
+        font-family: monospace;
+
+        & .title-api-lista {
+          margin-bottom: 10svw;
+          font-size: 5svw;
+        }
+        & .description {
+          font-size: 4.2svw;
+          margin-bottom: 2svw;
+        }
+      }
+      & .icon-api-lista {
+        display: flex;
+        flex-direction: column;
+        border-radius: 360px;
+        padding: 3svw;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 0.5svw 0.5svw 3px rgba(0, 0, 0, 0.384);
+        & i {
+          font-size: 20svw;
+          color: antiquewhite;
+        }
+        & label {
+          text-align: center;
+          & a {
+            text-decoration: none;
+            color: antiquewhite;
+            font-size: 3svw;
+            font-family: monospace;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes list {
+  0% {
+    translate: -100%;
+  }
+  100% {
+    translate: 0%;
+  }
+}
+@keyframes app-coletor {
+  0% {
+    translate: 100%;
+  }
+  100% {
+    translate: 0%;
+  }
+}
